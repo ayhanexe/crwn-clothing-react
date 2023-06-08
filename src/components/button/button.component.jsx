@@ -7,10 +7,10 @@ const BUTTON_TYPE_CLASSES = {
   inverted: "inverted",
 };
 
-export default function Button({ children, buttonType }) {
+export default function Button({ children, buttonType, ...restProps }) {
   return (
-    <div className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}>
+    <button className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`} {...restProps}>
       {children}
-    </div>
+    </button>
   );
 }
