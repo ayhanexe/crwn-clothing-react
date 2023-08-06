@@ -1,0 +1,5 @@
+const CATEGORIES_ACTION_TYPES = Object.freeze({
+    SET_CATEGORIES: Symbol("CATEGORIES/SET_CATEGORIES")
+})
+
+export default CATEGORIES_ACTION_TYPES;
